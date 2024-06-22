@@ -1,0 +1,6 @@
+# Find the common elements between two tuples.
+# Input: tup1 = (1, 2, 3, 4) tup2 = (3, 4, 5, 6) Output: (3, 4)
+tup1 = (1,2,3,4)
+tup2 = (6,5,4,3)
+convert = set(tup1).intersection(set(tup2))
+print(tuple(convert))
