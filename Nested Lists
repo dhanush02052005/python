@@ -1,0 +1,16 @@
+if __name__ == '__main__':
+    stu=[]
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        stu.append([name,score])
+    sec_low = sorted(set([score for name,score in stu]))[1]
+    
+    res=[]
+    for name,score in stu:
+        if score==sec_low:
+            res.append(name)
+    
+    res.sort()
+    for i in res:
+        print(i)
