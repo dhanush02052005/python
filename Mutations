@@ -1,0 +1,9 @@
+def mutate_string(string, position, character):
+    
+    st = list(string)
+    st[position] = character
+    s=""
+    for i in st:
+        s=s+i
+    return s
+
