@@ -1,0 +1,8 @@
+
+n1 = input()
+l1= set(map(int,input().split()))
+n2 = input()
+l2 = set(map(int,input().split()))
+set1 = l1.symmetric_difference(l2)
+for i in sorted(set1):
+    print(i)
