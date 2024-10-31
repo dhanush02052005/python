@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import re
+n= int(input())
+for i in range(n):
+    try:
+        a=input()
+        res = re.compile(a)
+        print(bool(res))
+    except re.error:
+        print("False")
